@@ -58,7 +58,7 @@ public class OrderSuccess {
 
         String actual = driver.findElement(By.cssSelector("[data-test-id='order-success']"))
                 .getText().trim();
-        String expected = "demoFAIL";
+        String expected = "Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.";
 
         assertEquals(expected, actual);
 
